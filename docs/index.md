@@ -1,25 +1,23 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "@rovoid/infra"
-  text: "Library for my projects with WebSocket"
-  tagline: My great project tagline
+  name: '@rovoid/infra'
+  text: Server infrastructure library
+  tagline: WebSocket, accounts, sessions, config, storage and logging
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Get Started
+      link: /guide/getting-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: API Reference
+      link: /api/web
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: WebSocket
+    details: Typed event emitter, ping/pong with latency, kick, graceful stop.
+  - title: Accounts & Sessions
+    details: Account persistence, session management, fast WebSocket → Session lookup.
+  - title: Config, Storage & Logger
+    details: Namespaced JSON config, atomic file writes, structured logging.
 ---
-
