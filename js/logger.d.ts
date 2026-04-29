@@ -1,0 +1,10 @@
+export type SeverityLevel = 0 | 1 | 2 | 3;
+export declare function info(...msg: string[]): void;
+export declare function warn(...msg: string[]): void;
+export declare function error(...msg: string[]): void;
+export declare function debug(...msg: string[]): void;
+declare let logger: typeof _emitLog;
+export declare const emitLog: (level: SeverityLevel, ...msg: string[]) => void;
+export declare function setLogger(newLogger?: typeof logger): void;
+declare function _emitLog(level: SeverityLevel, ...msg: string[]): void;
+export {};

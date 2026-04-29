@@ -1,0 +1,43 @@
+{
+  "name": "@rovoid/infra",
+  "version": "0.0.7",
+  "license": "MIT",
+  "description": "Library for my projects with WebSocket",
+  "private": false,
+  "type": "module",
+  "main": "./js/index.js",
+  "types": "./js/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./js/index.js",
+      "types": "./js/index.d.ts"
+    }
+  },
+  "files": [
+    "js"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "export": "npm run build && npm pack",
+    "release": "npm run build && npm version patch && npm publish --access public",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/ws": "^8.5.0",
+    "typescript": "^5.7.0",
+    "vitepress": "^1.6.4"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
