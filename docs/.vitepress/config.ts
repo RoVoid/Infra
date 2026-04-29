@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
     title: '@rovoid/infra',
     description: 'Server infrastructure library: WebSocket, accounts, sessions, config, storage and logging',
-    base: '/Infra/',
+    base: '/Infra',
 
     themeConfig: {
         nav: [
