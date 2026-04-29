@@ -3,6 +3,7 @@ import { defineConfig } from 'vitepress';
 export default defineConfig({
     title: '@rovoid/infra',
     description: 'Server infrastructure library: WebSocket, accounts, sessions, config, storage and logging',
+    base: '/Infra/',
 
     themeConfig: {
         nav: [
@@ -14,9 +15,7 @@ export default defineConfig({
         sidebar: [
             {
                 text: 'Guide',
-                items: [
-                    { text: 'Getting Started', link: '/guide/getting-started' },
-                ],
+                items: [{ text: 'Getting Started', link: '/guide/getting-started' }],
             },
             {
                 text: 'API',
@@ -30,9 +29,7 @@ export default defineConfig({
             },
         ],
 
-        socialLinks: [
-            { icon: 'github', link: 'https://github.com/RoVoid/Infra' },
-        ],
+        socialLinks: [{ icon: 'github', link: 'https://github.com/RoVoid/Infra' }],
 
         search: {
             provider: 'local',
